@@ -36,3 +36,4 @@ RUN echo "/rabbitmq_server-3.3.5/sbin/rabbitmq-server & ">>runAll.sh
 RUN echo "sleep 5 ">>runAll.sh
 RUN echo "/spring-xd-1.0.1.BUILD-SNAPSHOT/xd/bin/xd-singlenode  --analytics redis  "  >>runAll.sh
 RUN chmod +x runAll.sh
+CMD ./runAll.sh &
